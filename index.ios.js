@@ -13,5 +13,8 @@ import{
 // var NV=require('./navigator/main');
 // AppRegistry.registerComponent('Box',() => NV);
 //TextInput
-var appForGaode=require('./TextInput/main');
-AppRegistry.registerComponent('Box',() => appForGaode);
+// var appForGaode=require('./TextInput/main');
+// AppRegistry.registerComponent('Box',() => appForGaode);
+//AutomaticallyPrompts
+var autoForApp=require('./AutomaticallyPrompts/main');
+AppRegistry.registerComponent('Box',() => autoForApp);
