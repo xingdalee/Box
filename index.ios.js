@@ -16,5 +16,8 @@ import{
 // var appForGaode=require('./TextInput/main');
 // AppRegistry.registerComponent('Box',() => appForGaode);
 //AutomaticallyPrompts
-var autoForApp=require('./AutomaticallyPrompts/main');
-AppRegistry.registerComponent('Box',() => autoForApp);
+// var autoForApp=require('./AutomaticallyPrompts/main');
+// AppRegistry.registerComponent('Box',() => autoForApp);
+//Touchanle
+var TouchableApp=require('./TouchableClass/main');
+AppRegistry.registerComponent('Box',() => TouchableApp);
