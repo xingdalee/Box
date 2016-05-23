@@ -4,8 +4,6 @@ import{
   StyleSheet,
   Text,
   View,
-  TextInput,
-  PixelRatio,
   TouchableHighlight
 }from 'react-native';
 var style=StyleSheet.create({

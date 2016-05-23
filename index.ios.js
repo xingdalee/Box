@@ -19,5 +19,8 @@ import{
 // var autoForApp=require('./AutomaticallyPrompts/main');
 // AppRegistry.registerComponent('Box',() => autoForApp);
 //Touchanle
-var TouchableApp=require('./TouchableClass/main');
-AppRegistry.registerComponent('Box',() => TouchableApp);
+// var TouchableApp=require('./TouchableClass/main');
+// AppRegistry.registerComponent('Box',() => TouchableApp);
+// TouchableOpacityApp
+var TouchableOpacityApp=require('./TouchableOpacity/main');
+AppRegistry.registerComponent('Box',() => TouchableOpacityApp);
