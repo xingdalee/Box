@@ -22,5 +22,8 @@ import{
 // var TouchableApp=require('./TouchableClass/main');
 // AppRegistry.registerComponent('Box',() => TouchableApp);
 // TouchableOpacityApp
-var TouchableOpacityApp=require('./TouchableOpacity/main');
-AppRegistry.registerComponent('Box',() => TouchableOpacityApp);
+// var TouchableOpacityApp=require('./TouchableOpacity/main');
+// AppRegistry.registerComponent('Box',() => TouchableOpacityApp);
+//ImageForApp
+var ImageForApp=require('./ImageClass/main');
+AppRegistry.registerComponent('Box',() => ImageForApp);
