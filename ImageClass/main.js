@@ -45,15 +45,11 @@ var imgs=[
   'http://vczero.github.io/ctrip/nian2.png',
   'http://www.ituring.com.cn/bookcover/1521.260.jpg'
 ];
-var i33mgs=[
-  'http://vczero.github.io/ctrip/hua2.png',
-  'http://vczero.github.io/ctrip/nian2.png',
-  'http://www.ituring.com.cn/bookcover/1521.260.jpg'
-];
 // 程序的入口是ImageForApp
 // <MyImage imgs={imgs}>:imgs标签将值传给getInitialState的this.props对象中
 // getInitialState里的return后，值保存在this.state里，需要通过setState来修改里面的值
 // source：最后通过数组的坐标来确定显示的图片
+// 加载本地图片：source={require('./images/meinv.jpg')}
 var MyImage=React.createClass({
   getInitialState:function(){
     var imgs=this.props.imgs;
