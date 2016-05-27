@@ -24,6 +24,9 @@ import{
 // TouchableOpacityApp
 // var TouchableOpacityApp=require('./TouchableOpacity/main');
 // AppRegistry.registerComponent('Box',() => TouchableOpacityApp);
-//ImageForApp
-var ImageForApp=require('./ImageClass/main');
-AppRegistry.registerComponent('Box',() => ImageForApp);
+//Image组件
+// var ImageForApp=require('./ImageClass/main');
+// AppRegistry.registerComponent('Box',() => ImageForApp);
+// TabBarIos组件 类似于QQtab切换
+var TabBarForApp=require('./TabBarIosClass/main');
+AppRegistry.registerComponent('Box',() => TabBarForApp);
