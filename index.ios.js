@@ -28,5 +28,8 @@ import{
 // var ImageForApp=require('./ImageClass/main');
 // AppRegistry.registerComponent('Box',() => ImageForApp);
 // TabBarIos组件 类似于QQtab切换
-var TabBarForApp=require('./TabBarIosClass/main');
-AppRegistry.registerComponent('Box',() => TabBarForApp);
+// var TabBarForApp=require('./TabBarIosClass/main');
+// AppRegistry.registerComponent('Box',() => TabBarForApp);
+// WebView组件
+var WebViewForApp=require('./WebViewClass/main');
+AppRegistry.registerComponent('Box',() => WebViewForApp);
