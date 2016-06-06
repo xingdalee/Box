@@ -31,5 +31,8 @@ import{
 // var TabBarForApp=require('./TabBarIosClass/main');
 // AppRegistry.registerComponent('Box',() => TabBarForApp);
 // WebView组件
-var WebViewForApp=require('./WebViewClass/main');
-AppRegistry.registerComponent('Box',() => WebViewForApp);
+// var WebViewForApp=require('./WebViewClass/main');
+// AppRegistry.registerComponent('Box',() => WebViewForApp);
+// appForweibo
+var appForweibo=require('./WeiBoOAuth/main');
+AppRegistry.registerComponent('Box',() => appForweibo);
