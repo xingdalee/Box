@@ -34,7 +34,10 @@ import{
 // var WebViewForApp=require('./WebViewClass/main');
 // AppRegistry.registerComponent('Box',() => WebViewForApp);
 //11、appForweibo:加载微博OAuth授权登陆p137
-var appForweibo=require('./WeiBoOAuth/main');
+// var appForweibo=require('./WeiBoOAuth/main');
 // 打印runApplication函数的定义
 // alert(AppRegistry.runApplication);
-AppRegistry.registerComponent('Box',() => appForweibo);
+// AppRegistry.registerComponent('Box',() => appForweibo);
+//12，购物车
+var ShoppingCart=require('./ShoppingCart/main');
+AppRegistry.registerComponent('Box',() => ShoppingCart);
