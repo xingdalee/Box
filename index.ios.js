@@ -39,5 +39,5 @@ import{
 // alert(AppRegistry.runApplication);
 // AppRegistry.registerComponent('Box',() => appForweibo);
 //12，购物车AsyncStorage类似于localStorage的使用
-// var ShoppingCart=require('./ShoppingCart/main');
-// AppRegistry.registerComponent('Box',() => ShoppingCart);
+var ShoppingCart=require('./ShoppingCart/main');
+AppRegistry.registerComponent('Box',() => ShoppingCart);
