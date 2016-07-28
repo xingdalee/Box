@@ -5,50 +5,11 @@ import {
     Text,
     View,
     Image,
-    NavigatorIos,
+    NavigatorIOS,
     ScrollView,
     AsyncStorage,
     TouchableOpacity
 } from 'react-native';
-var Model = [
-    {
-        id: '1',
-        title: '佳沛新西兰进口猕猴桃',
-        desc: '12个装',
-        price: 99,
-        url: 'http://vczero.github.io/ctrip/guo_1.jpg'
-    }, {
-        id: '2',
-        title: '墨西哥进口牛油果',
-        desc: '6个装',
-        price: 59,
-        url: 'http://vczero.github.io/ctrip/guo_2.jpg'
-    }, {
-        id: '3',
-        title: '美国加州进口车厘子',
-        desc: '1000g',
-        price: 91.5,
-        url: 'http://vczero.github.io/ctrip/guo_3.jpg'
-    }, {
-        id: '4',
-        title: '新疆特产西梅',
-        desc: '1000g',
-        price: 69,
-        url: 'http://vczero.github.io/ctrip/guo_4.jpg'
-    }, {
-        id: '5',
-        title: '陕西大荔冬枣',
-        desc: '2000g',
-        price: 59.9,
-        url: 'http://vczero.github.io/ctrip/guo_5.jpg'
-    }, {
-        id: '6',
-        title: '南非红心西柚',
-        desc: '2500g',
-        price: 29.9,
-        url: 'http://vczero.github.io/ctrip/guo_6.jpg'
-    }
-];
 // backgroundColor: 'transparent' 透明色
 // opacity: 0.7 属性设置元素的不透明级别
 var styles = StyleSheet.create({
@@ -123,37 +84,79 @@ var styles = StyleSheet.create({
     textAlign:'center',
   }
 });
-
+var Model = [
+    {
+        id: '1',
+        title: '佳沛新西兰进口猕猴桃',
+        desc: '12个装',
+        price: 99,
+        url: 'http://vczero.github.io/ctrip/guo_1.jpg'
+    }, {
+        id: '2',
+        title: '墨西哥进口牛油果',
+        desc: '6个装',
+        price: 59,
+        url: 'http://vczero.github.io/ctrip/guo_2.jpg'
+    }, {
+        id: '3',
+        title: '美国加州进口车厘子',
+        desc: '1000g',
+        price: 91.5,
+        url: 'http://vczero.github.io/ctrip/guo_3.jpg'
+    }, {
+        id: '4',
+        title: '新疆特产西梅',
+        desc: '1000g',
+        price: 69,
+        url: 'http://vczero.github.io/ctrip/guo_4.jpg'
+    }, {
+        id: '5',
+        title: '陕西大荔冬枣',
+        desc: '2000g',
+        price: 59.9,
+        url: 'http://vczero.github.io/ctrip/guo_5.jpg'
+    }, {
+        id: '6',
+        title: '南非红心西柚',
+        desc: '2500g',
+        price: 29.9,
+        url: 'http://vczero.github.io/ctrip/guo_6.jpg'
+    }
+];
 // 1、列表项组件
 // resizeMode="contain"图片自适应所在容器中
 // numberOfLines标题最多显示两行.多的用省略号表示
 // Item的点击事件由父组件传递，点击后商品加入购物车
 // Text展示title，标题由父组件传递
 var Item = React.createClass({
-    render: function() {
-        return (
-            <View style={styles.item}>
-                <TouchableOpacity onPress={this.props.press}>
-                    <Image resizeMode="contain" style={styles.img} source={{
-                        uri: this.props.url
-                    }}>
-                        <Text numberOfLines={1} style={styles.item_text}>
-                            {this.props.title}
-                        </Text>
-                    </Image>
-                </TouchableOpacity>
-            </View>
-        )
-    }
+  render: function(){
+    return(
+      <View style={styles.item}>
+        <TouchableOpacity onPress={this.props.press}>
+          <Image
+              resizeMode="contain"
+              style={styles.img}
+              source={{uri:this.props.url}}>
+            <Text numberOfLines={1} style={styles.item_text}>{this.props.title}</Text>
+          </Image>
+        </TouchableOpacity>
+      </View>
+    );
+  }
 });
-// 2。列表组件
+// 2、列表组件
 var List = React.createClass({
     getInitialState: function() {
         return {count: 0}
     },
-    componentDitMount: function() {
+    // 生命周期
+    // componentWillMount 组件出现前 就是dom还没有渲染到html文档里面
+    // componentDidMount 组件渲染完成 已经出现在dom文档里
+    // 可以再各个周期实现特定的操作
+    componentDidMount: function() {
         var _that = this;
         AsyncStorage.getAllKeys(function(err, keys) {
+          var sds=keys;
             if (err) {
                 // 取数据出错
                 alert('err form List');
@@ -163,11 +166,14 @@ var List = React.createClass({
         })
     },
     render: function() {
+      // 类似于这样循环时报错：Each child in an array or iterator should have a unique "key" prop.
+      // Check the render method of `List`. See https://fb.me/react-warning-keys for more information.
+      // 只要在<View style={styles.row} key={i}>中加上key={i}就可以了
         var list = [];
         for (var i in Model) {
             if (i % 2 === 0) {
                 var row = (
-                    <View style={styles.row}>
+                    <View style={styles.row} key={i}>
                         <Item
                           url={Model[i].url}
                           title={Model[i].title}
@@ -193,7 +199,7 @@ var List = React.createClass({
         return(
           <ScrollView style={{marginTop:10}}>
             {list}
-            <Text onPress={this.goGouWu} style={styles.btn}>去结算</Text>
+            <Text onPress={this.goGouWu} style={styles.btn}>去结算{str}</Text>
           </ScrollView>
         );
     },
@@ -241,7 +247,7 @@ var GouWu=React.createClass({
     for(var i in data){
       price+=parseFloat(data[i].price);
       list.push(
-        <View style={[styles.row,style.list_item]}>
+        <View style={[styles.row,styles.list_item]} key={i}>
           <Text style={styles.list_item_desc}>
             {data[i].title}
             {data[i].desc}
@@ -262,12 +268,13 @@ var GouWu=React.createClass({
       </ScrollView>
     )
   },
-  componentDitMount:function(){
+  componentDidMount:function(){
     var _that=this;
     AsyncStorage.getAllKeys(function(err,keys){
       if(err){
         alert('err from AsyncStorage.getAllKeys');
       }
+      // multiGet获取多项，其中keys是字符串数组
       AsyncStorage.multiGet(keys,function(errs,result){
         // 得到的是二维数组
         // result[i][0]表示我们存储的键，result[i][1]表示我们存储的值
@@ -294,17 +301,18 @@ var GouWu=React.createClass({
     });
   }
 });
-var ShoppingCart=React.createClass({
-  render:function(){
-    return(
+var ShoppingCart = React.createClass({
+  render: function() {
+    return (
       <NavigatorIOS
         style={styles.container}
         initialRoute={
-          component:List,
-          title:'水果列表'
-        }
-        />
-    )
+          {
+            component: List,
+            title: '水果列表'
+          }
+        }/>
+    );
   }
 });
 module.exports = ShoppingCart;
