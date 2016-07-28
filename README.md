@@ -1,14 +1,17 @@
-# React-Native-Code
-《React Native入门与实战》参考代码           
+# 语法笔记
 
-##CSS:
+## CSS:
   backgroundColor: 'transparent'透明色
+
   var onePT=1/PixelRatio.get();获取最小线宽
+
   flexDirection:主轴与行内轴方向作为默认的书写模式。即横向从左到右排列（左对齐）
+
   flex:1所有灵活的项目都带有相同的长度，忽略它们的内容
+  
   opacity: 0.7 属性设置元素的不透明级别
 
-##React:
+## React:
 resizeMode="contain"图片自适应所在容器中
 numberOfLines标题最多显示两行.多的用省略号表示
 onEndEditing编辑结束时调用
