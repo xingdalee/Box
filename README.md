@@ -50,9 +50,9 @@
 
 ##生命周期
 
-  componentWillMount 组件出现前 就是dom还没有渲染到html文档里面
+> componentWillMount 组件出现前 就是dom还没有渲染到html文档里面
 
-  componentDidMount 组件渲染完成 已经出现在dom文档里
+> componentDidMount 组件渲染完成 已经出现在dom文档里
 
 可以再各个周期实现特定的操作
 ##报错信息和解决方式
