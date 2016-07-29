@@ -45,5 +45,8 @@ import{
 // var AlertIosForApp=require('./AlertIOS/main');
 // AppRegistry.registerComponent('Box',() => AlertIosForApp);
 // 14、ActionSheetIOS分享栏和拨打电话等
-var ActionSheetIOSForApp=require('./ActionSheetIOS/main');
-AppRegistry.registerComponent('Box',() => ActionSheetIOSForApp);
+// var ActionSheetIOSForApp=require('./ActionSheetIOS/main');
+// AppRegistry.registerComponent('Box',() => ActionSheetIOSForApp);
+// 15、PixelRatio，获取像素密度
+var PixelRatioForApp=require('./PixelRatio/main');
+AppRegistry.registerComponent('Box',() => PixelRatioForApp);
