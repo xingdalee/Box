@@ -1,6 +1,6 @@
 # 语法速查
 
->各功能模块介绍以及部分API见Wiki
+>各功能模块介绍以及部分API见[Wiki](https://github.com/XingdaLee/Box/wiki)
 
 ##报错信息与解决方法
 * 类似于这样循环时报错（/box/ShoppingCart）：Each child in an array or iterator should have a unique "key" prop.
