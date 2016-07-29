@@ -1,6 +1,6 @@
 # 语法速查
 
->其他详情见Wiki
+>详情见Wiki
 
 ## CSS:
 backgroundColor: 'transparent'透明色
