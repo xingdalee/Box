@@ -41,6 +41,9 @@ import{
 //12，购物车AsyncStorage类似于localStorage的使用
 // var ShoppingCart=require('./ShoppingCart/main');
 // AppRegistry.registerComponent('Box',() => ShoppingCart);
-// 13、AlertIOS
-var AlertIosForApp=require('./AlertIOS/main');
-AppRegistry.registerComponent('Box',() => AlertIosForApp);
+// 13、AlertIOS弹窗和用户在弹窗中输入数据
+// var AlertIosForApp=require('./AlertIOS/main');
+// AppRegistry.registerComponent('Box',() => AlertIosForApp);
+// 14、ActionSheetIOS分享栏和拨打电话等
+var ActionSheetIOSForApp=require('./ActionSheetIOS/main');
+AppRegistry.registerComponent('Box',() => ActionSheetIOSForApp);
