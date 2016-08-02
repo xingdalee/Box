@@ -48,5 +48,8 @@ import{
 // var ActionSheetIOSForApp=require('./ActionSheetIOS/main');
 // AppRegistry.registerComponent('Box',() => ActionSheetIOSForApp);
 // 15、PixelRatio，获取像素密度
-var PixelRatioForApp=require('./PixelRatio/main');
-AppRegistry.registerComponent('Box',() => PixelRatioForApp);
+// var PixelRatioForApp=require('./PixelRatio/main');
+// AppRegistry.registerComponent('Box',() => PixelRatioForApp);
+// 16、StatusBarIosForApp
+var StatusBarIosForApp=require('./StatusBarIOS/main');
+AppRegistry.registerComponent('Box',() => StatusBarIosForApp);
