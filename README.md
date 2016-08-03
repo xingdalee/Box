@@ -7,3 +7,9 @@
   Check the render method of `List`. See https://fb.me/react-warning-keys for more information.
 
 >只要在<View style={styles.row} key={i}>中加上key={i}就可以了
+
+* CameraRoll Cannot read property 'getPhotos' of undefined
+
+![CameraRollErr](./ReadmeImages/cameraRollerr.png)
+
+>在libraries上右击添加node_modules/react-native/CameraRoll/RCTCameraRoll.xcodeproj，并点击RCTCameraRoll.xcodeproj 选择'Build Phases'，点击Link Binary With libraries添加 libRCTCameraRoll.a ,重启模拟器即可，相关资料：https://github.com/facebook/react-native/issues/4560

@@ -50,6 +50,12 @@ import{
 // 15、PixelRatio，获取像素密度
 // var PixelRatioForApp=require('./PixelRatio/main');
 // AppRegistry.registerComponent('Box',() => PixelRatioForApp);
-// 16、StatusBarIosForApp
-var StatusBarIosForApp=require('./StatusBarIOS/main');
-AppRegistry.registerComponent('Box',() => StatusBarIosForApp);
+// 16、StatusBarIosForApp 显示连接互联网时的小圈圈
+// var StatusBarIosForApp=require('./StatusBarIOS/main');
+// AppRegistry.registerComponent('Box',() => StatusBarIosForApp);
+// 17、NetInfoForApp 获取当前的网络状态是wifi还是3g等，并有监听事件
+// var NetInfoForApp=require('./NetInfo/main');
+// AppRegistry.registerComponent('Box',() => NetInfoForApp);
+// 18、CameraRollForApp
+var CameraRollForApp=require('./CameraRoll/main');
+AppRegistry.registerComponent('Box',() => CameraRollForApp);
