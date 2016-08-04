@@ -39,8 +39,8 @@ import{
 // alert(AppRegistry.runApplication);
 // AppRegistry.registerComponent('Box',() => appForweibo);
 //12，购物车AsyncStorage类似于localStorage的使用
-// var ShoppingCart=require('./ShoppingCart/main');
-// AppRegistry.registerComponent('Box',() => ShoppingCart);
+var ShoppingCart=require('./ShoppingCart/main');
+AppRegistry.registerComponent('Box',() => ShoppingCart);
 // 13、AlertIOS弹窗和用户在弹窗中输入数据
 // var AlertIosForApp=require('./AlertIOS/main');
 // AppRegistry.registerComponent('Box',() => AlertIosForApp);
@@ -57,5 +57,5 @@ import{
 // var NetInfoForApp=require('./NetInfo/main');
 // AppRegistry.registerComponent('Box',() => NetInfoForApp);
 // 18、CameraRollForApp
-var CameraRollForApp=require('./CameraRoll/main');
-AppRegistry.registerComponent('Box',() => CameraRollForApp);
+// var CameraRollForApp=require('./CameraRoll/main');
+// AppRegistry.registerComponent('Box',() => CameraRollForApp);
