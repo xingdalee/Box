@@ -72,5 +72,8 @@ import{
 // var HttpForApp=require('./XMLHttpRequest/main');
 // AppRegistry.registerComponent('Box',() => HttpForApp);
 // 23、SuperagentForApp 第三方的HTTP请求
-var SuperagentForApp=require('./SuperagentHttp/main');
-AppRegistry.registerComponent('Box',() => SuperagentForApp);
+// var SuperagentForApp=require('./SuperagentHttp/main');
+// AppRegistry.registerComponent('Box',() => SuperagentForApp);
+// 24、ReactAnimationForApp 动画
+var ReactAnimationForApp=require('./ReactAnimation/main');
+AppRegistry.registerComponent('Box',() => ReactAnimationForApp);
