@@ -63,5 +63,8 @@ import{
 // var cameraApp=require('./ReactCamera/main');
 // AppRegistry.registerComponent('Box',() => cameraApp);
 // 20、VibrationForApp 手机震动
-var VibrationForApp=require('./VibrationIOS/main');
-AppRegistry.registerComponent('Box',() => VibrationForApp);
+// var VibrationForApp=require('./VibrationIOS/main');
+// AppRegistry.registerComponent('Box',() => VibrationForApp);
+// 21、geolocationForApp 获取位置
+var geolocationForApp=require('./Geolocation/main');
+AppRegistry.registerComponent('Box',() => geolocationForApp);
