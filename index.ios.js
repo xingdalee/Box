@@ -60,5 +60,8 @@ import{
 // var CameraRollForApp=require('./CameraRoll/main');
 // AppRegistry.registerComponent('Box',() => CameraRollForApp);
 // 19、cameraApp 调用相机
-var cameraApp=require('./ReactCamera/main');
-AppRegistry.registerComponent('Box',() => cameraApp);
+// var cameraApp=require('./ReactCamera/main');
+// AppRegistry.registerComponent('Box',() => cameraApp);
+// 20、VibrationForApp 手机震动
+var VibrationForApp=require('./VibrationIOS/main');
+AppRegistry.registerComponent('Box',() => VibrationForApp);
