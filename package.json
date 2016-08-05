@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "react-native-camera": "^0.3.8",
+    "react-timer-mixin": "^0.13.3",
     "superagent": "^2.1.0"
   }
 }
