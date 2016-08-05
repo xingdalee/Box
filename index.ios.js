@@ -39,8 +39,8 @@ import{
 // alert(AppRegistry.runApplication);
 // AppRegistry.registerComponent('Box',() => appForweibo);
 //12，购物车AsyncStorage类似于localStorage的使用
-var ShoppingCart=require('./ShoppingCart/main');
-AppRegistry.registerComponent('Box',() => ShoppingCart);
+// var ShoppingCart=require('./ShoppingCart/main');
+// AppRegistry.registerComponent('Box',() => ShoppingCart);
 // 13、AlertIOS弹窗和用户在弹窗中输入数据
 // var AlertIosForApp=require('./AlertIOS/main');
 // AppRegistry.registerComponent('Box',() => AlertIosForApp);
@@ -56,6 +56,9 @@ AppRegistry.registerComponent('Box',() => ShoppingCart);
 // 17、NetInfoForApp 获取当前的网络状态是wifi还是3g等，并有监听事件
 // var NetInfoForApp=require('./NetInfo/main');
 // AppRegistry.registerComponent('Box',() => NetInfoForApp);
-// 18、CameraRollForApp
+// 18、CameraRollForApp 读取和保存照片
 // var CameraRollForApp=require('./CameraRoll/main');
 // AppRegistry.registerComponent('Box',() => CameraRollForApp);
+// 19、cameraApp 调用相机
+var cameraApp=require('./ReactCamera/main');
+AppRegistry.registerComponent('Box',() => cameraApp);
