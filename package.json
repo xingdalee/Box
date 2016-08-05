@@ -10,6 +10,7 @@
     "react-native": "^0.25.1"
   },
   "devDependencies": {
-    "react-native-camera": "^0.3.8"
+    "react-native-camera": "^0.3.8",
+    "superagent": "^2.1.0"
   }
 }

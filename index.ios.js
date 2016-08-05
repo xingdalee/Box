@@ -66,5 +66,8 @@ import{
 // var VibrationForApp=require('./VibrationIOS/main');
 // AppRegistry.registerComponent('Box',() => VibrationForApp);
 // 21、geolocationForApp 获取位置
-var geolocationForApp=require('./Geolocation/main');
-AppRegistry.registerComponent('Box',() => geolocationForApp);
+// var geolocationForApp=require('./Geolocation/main');
+// AppRegistry.registerComponent('Box',() => geolocationForApp);
+// 22、HttpForApp HTTP请求
+var HttpForApp=require('./XMLHttpRequest/main');
+AppRegistry.registerComponent('Box',() => HttpForApp);
