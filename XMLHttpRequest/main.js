@@ -31,7 +31,7 @@ var HttpForApp = React.createClass({
       }
     };
 
-    request.open('GET', 'http://121.40.205.144:10008/pssweb/cities/query?groupByCountry=true&openAirline=true&simpleData=true');
+    request.open('GET', 'http://www.baidu.com/');
     request.send();
   },
 
