@@ -78,5 +78,8 @@ import{
 // var ReactAnimationForApp=require('./ReactAnimation/main');
 // AppRegistry.registerComponent('Box',() => ReactAnimationForApp);
 // 25、swiper 轮播
-var swiper=require('./Swiper/main');
-AppRegistry.registerComponent('Box',() => swiper);
+// var swiper=require('./Swiper/main');
+// AppRegistry.registerComponent('Box',() => swiper);
+// 26、OpenModalForApp modal
+var OpenModalForApp=require('./OpenModal/main');
+AppRegistry.registerComponent('Box',() => OpenModalForApp);

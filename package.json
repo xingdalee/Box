@@ -8,6 +8,7 @@
   "dependencies": {
     "react": "^0.14.8",
     "react-native": "^0.25.1",
+    "react-native-modal": "^0.4.0",
     "react-native-swiper": "^1.4.8"
   },
   "devDependencies": {
