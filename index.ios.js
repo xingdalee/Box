@@ -75,5 +75,8 @@ import{
 // var SuperagentForApp=require('./SuperagentHttp/main');
 // AppRegistry.registerComponent('Box',() => SuperagentForApp);
 // 24、ReactAnimationForApp 动画
-var ReactAnimationForApp=require('./ReactAnimation/main');
-AppRegistry.registerComponent('Box',() => ReactAnimationForApp);
+// var ReactAnimationForApp=require('./ReactAnimation/main');
+// AppRegistry.registerComponent('Box',() => ReactAnimationForApp);
+// 25、swiper 轮播
+var swiper=require('./Swiper/main');
+AppRegistry.registerComponent('Box',() => swiper);
