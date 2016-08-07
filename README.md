@@ -2,6 +2,18 @@
 
 >各功能模块介绍以及部分API见[Wiki](https://github.com/XingdaLee/Box/wiki)
 
+##打离线包
+
+>1、将AppDlelegate.m中的  jsCodeLocation = [NSURL URLWithString:@"http://192.168.2.62:8081/index.ios.bundle?platform=ios&dev=true"];
+注释掉
+
+>2、将//   jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+注释放开
+
+>3、在终端执行：react-native bundle --minify --entry-file index.ios.js --bundle-output main.jsbundle
+
+>4、Xcode中Command+R运行即可
+
 ##掉坑总结
 
 1、npm只使用电脑自带‘终端’ 绝对不在使用第三方工具;
