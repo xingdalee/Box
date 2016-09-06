@@ -2,9 +2,9 @@
 
 >各功能模块介绍以及部分API见[Wiki](https://github.com/XingdaLee/Box/wiki)
 
-##打离线包
+## 打离线包
 
->1、将AppDlelegate.m中的  jsCodeLocation = [NSURL URLWithString:@"http://192.168.2.62:8081/index.ios.bundle?platform=ios&dev=true"];
+>1、将AppDelegate.m中的  jsCodeLocation = [NSURL URLWithString:@"http://192.168.2.62:8081/index.ios.bundle?platform=ios&dev=true"];
 注释掉
 
 >2、将//   jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
@@ -14,7 +14,7 @@
 
 >4、Xcode中Command+R运行即可
 
-##掉坑总结
+## 掉坑总结
 
 1、npm只使用电脑自带‘终端’ 绝对不在使用第三方工具;
 
@@ -22,7 +22,7 @@
 
 3、遇到Xcode编译错误时，如果怀疑是npm下载数据不完整的问题，必须 sudo npm cache clean;
 
-##报错信息与解决方法
+## 报错信息与解决方法
 * 类似于这样循环时报错（/box/ShoppingCart）：Each child in an array or iterator should have a unique "key" prop.
   Check the render method of `List`. See https://fb.me/react-warning-keys for more information.
 

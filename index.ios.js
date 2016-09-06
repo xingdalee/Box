@@ -69,8 +69,8 @@ import{
 // var geolocationForApp=require('./Geolocation/main');
 // AppRegistry.registerComponent('Box',() => geolocationForApp);
 // 22、HttpForApp HTTP请求
-// var HttpForApp=require('./XMLHttpRequest/main');
-// AppRegistry.registerComponent('Box',() => HttpForApp);
+var HttpForApp=require('./XMLHttpRequest/main');
+AppRegistry.registerComponent('Box',() => HttpForApp);
 // 23、SuperagentForApp 第三方的HTTP请求
 // var SuperagentForApp=require('./SuperagentHttp/main');
 // AppRegistry.registerComponent('Box',() => SuperagentForApp);
@@ -81,5 +81,5 @@ import{
 // var swiper=require('./Swiper/main');
 // AppRegistry.registerComponent('Box',() => swiper);
 // 26、OpenModalForApp modal
-var OpenModalForApp=require('./OpenModal/main');
-AppRegistry.registerComponent('Box',() => OpenModalForApp);
+// var OpenModalForApp=require('./OpenModal/main');
+// AppRegistry.registerComponent('Box',() => OpenModalForApp);
